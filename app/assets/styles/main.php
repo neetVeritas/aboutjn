@@ -7,6 +7,11 @@
     font-family: 'Mountains of Christmas', cursive;
   */
   <?php require_once('variables.php'); ?>
+  /* # Defaults */
+  html, body {margin:0;padding:0;height:100%;}
+  app {
+    min-height: 100%;
+  }
   /* # Helpers */
   .ico {
     display: inline-block;
@@ -21,7 +26,9 @@
     padding-left: <?php echo $ico_dist; ?>;
     padding-right: <?php echo $ico_dist; ?>;
   }
-  <?php // #styles
+  
+  <?php // # Styles
+    require_once('components/loading.style.php');
     require_once('components/header.style.php');
     require_once('components/footer.style.php');
     require_once('partials/home.style.php');
