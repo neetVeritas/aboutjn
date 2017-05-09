@@ -1,0 +1,25 @@
+{
+  "en": {
+    "header": {
+      "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "about": "About"
+      }
+    }
+  },
+  "sp": {
+    "nav": {
+        "home": "Casa",
+        "blog": "Blog",
+        "about": "Sobre"
+      }
+  },
+  "br": {
+    "nav": {
+        "home": "Casa",
+        "blog": "Blog",
+        "about": "Sobre"
+      }
+  }
+}

@@ -21,36 +21,13 @@
 
 <!-- App init -->
 <script type="text/javascript">
-  const localizations = {
-    en: {
-      header: {
-        nav: {
-          home: 'Home',
-          blog: 'Blog',
-          about: 'About'
-        }
-      }
-    },
-    sp: {
-      nav: {
-          home: 'Casa',
-          blog: 'Blog',
-          about: 'Sobre'
-        }
-    },
-    br: {
-      nav: {
-          home: 'Casa',
-          blog: 'Blog',
-          about: 'Sobre'
-        }
-    }
-  };
-  Vue.use(VueLocalize, {
-    lang_default: 'en',
-    localizations: localizations
+  $.getJSON('app/config/i18n.json', function(data) {
+    Vue.use(VueLocalize, {
+      lang_default: 'en',
+      localizations: data
+    });
+    const App = new Vue({
+      router
+    }).$mount('app');
   });
-  const App = new Vue({
-    router
-  }).$mount('app');
 </script>
