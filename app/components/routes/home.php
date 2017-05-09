@@ -4,5 +4,5 @@
 <script type="text/javascript">
   const Home = Vue.component('Home', {
     template: '#home-template'
-  })
+  });
 </script>

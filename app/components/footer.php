@@ -4,5 +4,5 @@
 <script type="text/javascript">
   Vue.component('app-footer', {
     template: '#footer-template'
-  })
+  });
 </script>
