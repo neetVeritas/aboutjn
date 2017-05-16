@@ -3,43 +3,53 @@
 ?>
 
 <?php // # Components
+  require_once('components/loading.php');
   require_once('components/header.php');
+  require_once('components/navbar.php');
   require_once('components/footer.php');
   require_once('components/routes/home.php');
   require_once('components/routes/blog.php');
   require_once('components/routes/about.php');
-  require_once('components/routes/not.found.php');
+  require_once('components/routes/notFound.php');
   require_once('routes/router.php');
 ?>
 
 <!-- App entry point -->
-<app>
-  <div class="loading loading-wrapper">
-    <div class="loading loading-container">
-      <h3>
-        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-        <span class="sr-only">Loading...</span>
-      </h3>
-    </div>
-  </div>
+<app id="main">
   <app-header></app-header>
-  <router-view></router-view>
+  <app-loading></app-loading>
+    <section id="view">
+      <router-view></router-view>
+    </section>
+  </div>
   <app-footer></app-footer>
 </app>
 
 <!-- App init -->
 <script type="text/javascript">
-  $.getJSON('app/config/i18n.json', function(data) {
-    window.setInterval(() => {
-      $('div.loading-wrapper').addClass('animated zoomOut'); // # fade loading screen
-      window.setInterval(() => { $('div.loading-wrapper').hide(); }, 500); // # hide loading screen
-    }, 500);
+  const store = new Vuex.Store({
+    state: {
+      busy: false
+    },
+    mutations: {
+      status (state) {
+        state.busy = !state.busy;
+      }
+    }
+  });
+  $.get('app/config/i18n.json', function(data) {
     Vue.use(VueLocalize, {
       lang_default: 'en',
       localizations: data
     }); // # install localize plugin
     const App = new Vue({
-      router
+      store,
+      router,
+      created: function() {
+        particlesJS.load('main', 'app/config/particles.json', function() {
+          console.log('Particles have been loaded successfully.');
+        });
+      }
     }).$mount('app');
-  }); // # instantiate app
+  });
 </script>

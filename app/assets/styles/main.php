@@ -1,16 +1,31 @@
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Mountains+of+Christmas:700');
+  @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Poiret+One|Unica+One|');
   /*
-    http://www.color-hex.com/color-palette/38226
+    http://www.color-hex.com/color-palette/30086
   
-    font-family: 'Advent Pro', sans-serif;
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Advent Pro', sans-serif; # general text
+    font-family: 'Poiret One', cursive; # text bodies
+    font-family: 'Unica One', cursive; # logo
   */
   <?php require_once('variables.php'); ?>
   /* # Defaults */
+  * { font-family: 'Advent Pro', sans-serif; }
   html, body {margin:0;padding:0;height:100%;}
+  body {
+    background-color: #292b2c;
+  }
   app {
     min-height: 100%;
+  }
+  section {
+    display: block;
+  }
+  section#view {
+    position: absolute;
+    top: 25%;
+    background-color: #fff;
+    width: 70%;
+    left: 15%;
   }
   /* # Helpers */
   .ico {
@@ -26,13 +41,4 @@
     padding-left: <?php echo $ico_dist; ?>;
     padding-right: <?php echo $ico_dist; ?>;
   }
-  
-  <?php // # Styles
-    require_once('components/loading.style.php');
-    require_once('components/header.style.php');
-    require_once('components/footer.style.php');
-    require_once('partials/home.style.php');
-    require_once('partials/blog.style.php');
-    require_once('partials/about.style.php');
-  ?>
 </style>
