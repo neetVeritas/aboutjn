@@ -9,17 +9,21 @@
     }
   },
   "sp": {
-    "nav": {
+    "header": {
+      "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
       }
+    }
   },
-  "br": {
-    "nav": {
+  "pr": {
+    "header": {
+      "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
       }
+    }
   }
 }

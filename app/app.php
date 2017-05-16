@@ -38,7 +38,8 @@
       }
     }
   });
-  $.get('app/config/i18n.json', function(data) {
+  $.get(`app/config/i18n.json?t=${new Date().getTime().toString()}`, function(data) {
+    console.log(data)
     Vue.use(VueLocalize, {
       lang_default: 'en',
       localizations: data
