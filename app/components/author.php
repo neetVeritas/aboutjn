@@ -1,8 +1,6 @@
 <script type="text/x-template" id="author-component">
   <div class="author-wrapper">
-    <h1>
-      {{ author }}
-    </h1>
+    <h1>{{ fname || 'N/A' }}</h1>
     <div class="author-image">
       <img class="author-image-src" />
     </div>
@@ -15,7 +13,7 @@
 <script type="text/javascript">
   Vue.component('author', {
     props: [
-      'author',
+      'fname',
       'image',
       'github',
       'twitter'

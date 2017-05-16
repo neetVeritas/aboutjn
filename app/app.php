@@ -7,6 +7,7 @@
   require_once('components/header.php');
   require_once('components/navbar.php');
   require_once('components/footer.php');
+  require_once('components/author.php');
   require_once('components/routes/home.php');
   require_once('components/routes/blog.php');
   require_once('components/routes/about.php');
