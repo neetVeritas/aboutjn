@@ -15,12 +15,6 @@
   </transition>
 </script>
 
-<script type="text/javascript">
-  Vue.component('app-loading', {
-    template: '#loading-template'
-  });
-</script>
-
 <style>
   .loading.loading-wrapper {
       position: fixed;
@@ -38,3 +32,9 @@
       opacity: 0.5
   }
 </style>
+
+<script type="text/javascript">
+  Vue.component('app-loading', {
+    template: '#loading-template'
+  });
+</script>
