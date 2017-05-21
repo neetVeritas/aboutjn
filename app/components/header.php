@@ -14,6 +14,7 @@
     height: <?php echo $header_height; ?>;
     background-color: <?php echo $color_atomic; ?>;
     opacity: 0.8;
+    border-bottom: 3px solid <?php echo $color_cinder_dark; ?>;
   }
 
   header .header-wrapper h4 {

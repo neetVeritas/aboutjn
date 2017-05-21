@@ -8,10 +8,10 @@
         <div class="four columns text-center">
           <ul>
             <li>
-              <h5>Created with the amazing <i class="fa fa-bolt ico ico-fixed" style="color: orange;"></i> VueJS</h5>
+              <h5 v-localize="'footer.created'"></h5>
             </li>
             <li>
-              <h6>Designed with <i class="fa fa-heart ico ico-fixed" style="color: red;"></i> using SkeletonCSS</h6>
+              <h6 v-localize="'footer.designed'"></h6>
             </li>
           </ul>
         </div>
