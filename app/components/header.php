@@ -1,11 +1,7 @@
 <script type="text/x-template" id="header-template">
   <header>
-    <div class="header-menu-wrapper">
-      <ul class="header-menu">
-        <li>
-          This is for notifications...
-        </li>
-      </ul>
+    <div class="header-wrapper">
+      <h4 v-localize="'header.notification'" class=""></h4>
     </div>
   </header>
 </script>
@@ -20,15 +16,12 @@
     opacity: 0.8;
   }
 
-  header .header-wrapper {  
-  }
-
-  header .header-menu {
-    list-style: unstyled;
-  }
-
-  header .header-menu li {
-    display: inline;
+  header .header-wrapper h4 {
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    color: <?php echo $color_ghost_white; ?>;
+    font-family: <?php echo $font_logo; ?>;
   }
 
   header .header-menu li.header-title {

@@ -1,6 +1,7 @@
 {
   "en": {
     "header": {
+      "notification": "Welcome to my portfolio!",
       "nav": {
         "home": "Home",
         "blog": "Blog",
@@ -10,6 +11,7 @@
   },
   "sp": {
     "header": {
+      "notification": "¡Bienvenidos a mi cartera!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",
@@ -19,6 +21,7 @@
   },
   "pr": {
     "header": {
+      "notification": "Bem-vindo ao meu portfólio!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",

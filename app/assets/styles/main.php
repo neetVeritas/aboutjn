@@ -23,21 +23,28 @@
     $color_lynch = '#717b81';
     $color_celtic = '#2e3834';
 
+  /* # Fonts
+    font-family: 'Advent Pro', sans-serif; # general text
+    font-family: 'Poiret One', cursive; # text bodies
+    font-family: 'Unica One', cursive; # title
+    font-family: 'Montserrat Subrayada', sans-serif; # logo
+  */
+
+    $font_general = '\'Advent Pro\', sans-serif';
+    $font_body = '\'Poiret One\', cursive';
+    $font_title = '\'Unica One\', cursive';
+    $font_logo = '\'Montserrat Subrayada\', sans-serif';
+
   /* # Icons */
-    $ico_dist = '5px';
+    $ico_dist = '0.5rem';
 
   /* # Header */
-    $header_height = '60px';
+    $header_height = '6rem';
 
 ?>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Poiret+One|Unica+One|');
-  /*
-    font-family: 'Advent Pro', sans-serif; # general text
-    font-family: 'Poiret One', cursive; # text bodies
-    font-family: 'Unica One', cursive; # logo
-  */
+  @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Poiret+One|Unica+One|Montserrat+Subrayada');
   * {
     font-family: 'Advent Pro', sans-serif;
   }
@@ -85,6 +92,15 @@
   .ico-fixed {
     padding-left: <?php echo $ico_dist; ?>;
     padding-right: <?php echo $ico_dist; ?>;
+  }
+  .text-general {
+    font-family: <?php echo $font_general; ?>;
+  }
+  .text-body {
+    font-family: <?php echo $font_body; ?>;
+  }
+  .text-logo {
+    font-family: <?php echo $font_logo; ?>;
   }
   .text-center {
     text-align: center;

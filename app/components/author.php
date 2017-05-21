@@ -4,6 +4,7 @@
       <img :src="image" class="author-image-src" />
     </div>
     <h1>{{ fname || 'N/A' }}</h1>
+    <h2></h2>
   </div>
 </script>
 
