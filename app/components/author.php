@@ -1,13 +1,29 @@
 <script type="text/x-template" id="author-component">
   <div class="author-wrapper">
-    <h1>{{ fname || 'N/A' }}</h1>
     <div class="author-image">
-      <img class="author-image-src" />
+      <img :src="image" class="author-image-src" />
     </div>
+    <h1>{{ fname || 'N/A' }}</h1>
   </div>
 </script>
 
 <style>
+  .author-wrapper {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: <?php echo $color_ghost_white; ?>;
+    border: 1px solid <?php echo $color_celtic; ?>;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .author-image {
+    width: 50%;
+    margin: auto;
+  }
+  .author-image img.author-image-src {
+    width: 100%;
+    border-radius: 100%;
+  }
 </style>
 
 <script type="text/javascript">

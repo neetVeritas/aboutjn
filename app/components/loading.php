@@ -34,7 +34,7 @@
 </style>
 
 <script type="text/javascript">
-  Vue.component('app-loading', {
+  Vue.component('app-loader', {
     template: '#loading-template'
   });
 </script>

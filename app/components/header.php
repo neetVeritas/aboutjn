@@ -12,12 +12,12 @@
 
 <style>
   header {
-    background-color: #eceeef;
     position: absolute;
     display: block;
     width: 100%;
-    height: 60px;
-    opacity: 0.5;
+    height: <?php echo $header_height; ?>;
+    background-color: <?php echo $color_atomic; ?>;
+    opacity: 0.8;
   }
 
   header .header-wrapper {  

@@ -17,12 +17,11 @@
 
 <!-- App entry point -->
 <app id="main">
+  <app-loader></app-loader>
   <app-header></app-header>
-  <app-loading></app-loading>
-    <section id="view">
-      <router-view></router-view>
-    </section>
-  </div>
+  <section id="view">
+    <router-view></router-view>
+  </section>
   <app-footer></app-footer>
 </app>
 
@@ -48,7 +47,7 @@
       store,
       router,
       created: function() {
-        particlesJS.load('main', 'app/config/particles.json', function() {
+        particlesJS.load('view', `app/config/particles.json?t=${new Date().getTime().toString()}`, function() {
           console.log('Particles have been loaded successfully.');
         });
       }
