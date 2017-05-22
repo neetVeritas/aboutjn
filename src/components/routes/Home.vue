@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  const Home = Vue.component('Home', {
-    template: '#home-template'
-  });
+  export default {
+    name: 'Home'
+  };
 </script>

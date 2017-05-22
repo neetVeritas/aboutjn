@@ -1,4 +1,4 @@
-<script type="text/x-template" id="loading-template">
+<template>
   <transition
     name="custom-classes-transition"
     enter-active-class="animated zoomIn"
@@ -13,9 +13,15 @@
       </div>
     </div>
   </transition>
+</template>
+
+<script>
+  export default {
+    name: 'loader'
+  };
 </script>
 
-<style>
+<style scoped>
   .loading.loading-wrapper {
       position: fixed;
       z-index: 1000;
@@ -32,9 +38,3 @@
       opacity: 0.5
   }
 </style>
-
-<script type="text/javascript">
-  Vue.component('app-loader', {
-    template: '#loading-template'
-  });
-</script>

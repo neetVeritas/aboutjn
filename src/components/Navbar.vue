@@ -1,4 +1,4 @@
-<script type="text/x-template" id="navbar-template">
+<template>
   <nav>
     <div class="nav-left">
       <ul class="nav-menu">
@@ -28,14 +28,10 @@
       </ul>
     </div>
   </nav>
-</script>
+</template>
 
-<style>
-  
-</style>
-
-<script type="text/javascript">
-  Vue.component('app-navbar', {
-    template: '#navbar-template'
-  });
+<script>
+  export default {
+    name: 'navbar'
+  };
 </script>

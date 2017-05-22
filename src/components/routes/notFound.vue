@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  const NotFound = Vue.component('notFound', {
-    template: '#not-found-template'
-  });
+  export default {
+    name: 'notFound'
+  };
 </script>

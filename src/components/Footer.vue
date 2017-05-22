@@ -1,4 +1,4 @@
-<script type="text/x-template" id="footer-template">
+<template>
   <footer>
     <div class="footer-wrapper">
       <div class="row">
@@ -25,9 +25,15 @@
       </div>
     </div>
   </footer>
+</template>
+
+<script>
+  export default {
+    name: 'footer'
+  };
 </script>
 
-<style>
+<style scoped>
   footer {
     display: block;
     background-color: <?php echo $color_cinder_dark; ?>;
@@ -42,9 +48,3 @@
     padding: 15px;
   }
 </style>
-
-<script type="text/javascript">
-  Vue.component('app-footer', {
-    template: '#footer-template'
-  });
-</script>

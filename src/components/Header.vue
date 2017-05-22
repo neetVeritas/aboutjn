@@ -1,12 +1,18 @@
-<script type="text/x-template" id="header-template">
+<template>
   <header>
     <div class="header-wrapper">
       <h4 v-localize="'header.notification'" class=""></h4>
     </div>
   </header>
+</template>
+
+<script>
+  export default {
+    name: 'header'
+  };
 </script>
 
-<style>
+<style scoped>
   header {
     position: absolute;
     display: block;
@@ -31,9 +37,3 @@
     color: red;
   }
 </style>
-
-<script type="text/javascript">
-  Vue.component('app-header', {
-    template: '#header-template'
-  });
-</script>

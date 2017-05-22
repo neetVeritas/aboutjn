@@ -1,4 +1,4 @@
-<script type="text/x-template" id="author-component">
+<template>
   <div class="author-wrapper">
     <div class="author-image">
       <img :src="image" class="author-image-src" />
@@ -6,28 +6,21 @@
     <h1>{{ fname || 'N/A' }}</h1>
     <h2></h2>
   </div>
-</script>
+</template>
 
 <script>
   export default {
-    data () {
-      return {
-        msg: 'Hello from vue-loader!'
-      }
-    }
-  };
-  Vue.component('author', {
+    name: 'author',
     props: [
       'fname',
       'image',
       'github',
       'twitter'
-    ],
-    template: '#author-component'
-  });
+    ]
+  };
 </script>
 
-<style>
+<style scoped>
   .author-wrapper {
     width: 50%;
     text-align: center;

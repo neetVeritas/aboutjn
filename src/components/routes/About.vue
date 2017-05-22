@@ -3,7 +3,7 @@
 </template
 
 <script>
-  const About = Vue.component('About', {
-    template: '#about-template'
-  });
+  export default {
+    name: 'About'
+  };
 </script>
