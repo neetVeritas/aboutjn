@@ -2,7 +2,7 @@
   <h1>About</h1>
 </template
 
-<script type="text/javascript">
+<script>
   const About = Vue.component('About', {
     template: '#about-template'
   });

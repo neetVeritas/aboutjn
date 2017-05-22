@@ -1,7 +1,8 @@
-<script type="text/x-template" id="not-found-template">
+<template>
   <h1>404 Not Found</h1>
-</script>
-<script type="text/javascript">
+</template>
+
+<script>
   const NotFound = Vue.component('notFound', {
     template: '#not-found-template'
   });
