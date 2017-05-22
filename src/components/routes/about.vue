@@ -1,6 +1,7 @@
-<script type="text/x-template" id="about-template">
+<template>
   <h1>About</h1>
-</script>
+</template
+
 <script type="text/javascript">
   const About = Vue.component('About', {
     template: '#about-template'

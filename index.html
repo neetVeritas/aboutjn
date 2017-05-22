@@ -32,6 +32,14 @@
     <script type="text/javascript" src="app/assets/vendor/vue-localize.min.js"></script>
   </head>
   <body>
-    <script type="text/javascript">$(document).ready(function(){$('body').load('app/app.php')});</script>
+    <app id="main">
+      <app-loader></app-loader>
+      <app-header></app-header>
+      <section id="view">
+        <router-view></router-view>
+      </section>
+      <app-footer></app-footer>
+    </app>
+    <script src="dist/build.js"></script>
   </body>
 </html>

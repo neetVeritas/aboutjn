@@ -15,6 +15,15 @@
   require_once('routes/router.php');
 ?>
 
+<!-- App entry point -->
+<app id="main">
+  <app-loader></app-loader>
+  <app-header></app-header>
+  <section id="view">
+    <router-view></router-view>
+  </section>
+  <app-footer></app-footer>
+</app>
 
 <!-- App init -->
 <script type="text/javascript">

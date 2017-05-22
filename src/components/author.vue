@@ -8,6 +8,25 @@
   </div>
 </script>
 
+<script>
+  export default {
+    data () {
+      return {
+        msg: 'Hello from vue-loader!'
+      }
+    }
+  };
+  Vue.component('author', {
+    props: [
+      'fname',
+      'image',
+      'github',
+      'twitter'
+    ],
+    template: '#author-component'
+  });
+</script>
+
 <style>
   .author-wrapper {
     width: 50%;
@@ -26,15 +45,3 @@
     border-radius: 100%;
   }
 </style>
-
-<script type="text/javascript">
-  Vue.component('author', {
-    props: [
-      'fname',
-      'image',
-      'github',
-      'twitter'
-    ],
-    template: '#author-component'
-  });
-</script>
