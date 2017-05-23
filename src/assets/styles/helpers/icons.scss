@@ -1,0 +1,16 @@
+.ico {
+  display: inline-block;
+}
+
+.ico-left {
+  padding-right: <?php echo $ico_dist; ?>;
+}
+
+.ico-right {
+  padding-left: <?php echo $ico_dist; ?>;
+}
+
+.ico-fixed {
+  padding-left: <?php echo $ico_dist; ?>;
+  padding-right: <?php echo $ico_dist; ?>;
+}
