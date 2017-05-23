@@ -3,14 +3,14 @@
 }
 
 .ico-left {
-  padding-right: <?php echo $ico_dist; ?>;
+  padding-right: $ico-dist;
 }
 
 .ico-right {
-  padding-left: <?php echo $ico_dist; ?>;
+  padding-left: $ico-dist;
 }
 
 .ico-fixed {
-  padding-left: <?php echo $ico_dist; ?>;
-  padding-right: <?php echo $ico_dist; ?>;
+  padding-left: $ico-dist;
+  padding-right: $ico-dist;
 }
