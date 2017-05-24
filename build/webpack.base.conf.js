@@ -1,4 +1,3 @@
-
 var path = require('path')
 
 function resolve (dir) {
@@ -6,28 +5,45 @@ function resolve (dir) {
 }
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+      app: './src/main.js'
+  },
   output: {
-    path: './dist',
+    path: resolve('./dist'),
     publicPath: 'dist/',
     filename: 'build.js'
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+      'styles': resolve('src/assets/styles'),
+      'scss-loader': 'sass-loader'
+    }
   },
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        loader: 'babel',
-        exclude: /node_modules/
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            js: 'babel-loader',
+            scss: 'vue-style-loader!css-loader!sass-loader',
+            // sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+          }
+        }
       },
       {
-        test: /\.vue$/,
-        loader: 'vue'
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src')]
+      },
+      {
+        test: /\.s[a|c]ss$/,
+        loader: 'style!css!sass'
       }
     ]
-  },
-  vue: {
-    loaders: {
-      js: 'babel'
-    }
   }
 }

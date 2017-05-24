@@ -12,27 +12,29 @@
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import '~styles/variables.scss';
+
   header {
     position: absolute;
     display: block;
     width: 100%;
-    height: <?php echo $header_height; ?>;
-    background-color: <?php echo $color_atomic; ?>;
+    height: $header-height;
+    background-color: $color-cinder;
     opacity: 0.8;
-    border-bottom: 3px solid <?php echo $color_cinder_dark; ?>;
+    border-bottom: 3px solid $color-cinder-dark;
   }
 
   header .header-wrapper h4 {
     text-align: center;
     position: relative;
     top: 1rem;
-    color: <?php echo $color_ghost_white; ?>;
-    font-family: <?php echo $font_logo; ?>;
+    color: $color-ghost-white;
+    font-family: $font-logo;
   }
 
   header .header-menu li.header-title {
-    font-family: 'Unica One', cursive;
+    font-family: $font-title;
     font-size: 32px;
     color: red;
   }

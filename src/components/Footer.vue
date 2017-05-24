@@ -18,7 +18,7 @@
         <div class="four columns text-center">
           <ul>
             <li>
-              aboutjn <i class="fa fa-copyright ico ico-left"> neetGroup <strong>2015-2017</strong>
+              aboutjn <i class="fa fa-copyright ico ico-left"></i> neetGroup <strong>2015-2017</strong>
             </li>
           </ul>
         </div>
@@ -33,17 +33,21 @@
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import '~styles/variables.scss';
+
   footer {
     display: block;
-    background-color: <?php echo $color_cinder_dark; ?>;
+    background-color: $color-cinder-dark;
     width: 100%;
     color: #fff;
     opacity: 0.7;
   }
+
   footer ul {
     list-style: none;
   }
+
   .footer-wrapper {
     padding: 15px;
   }
