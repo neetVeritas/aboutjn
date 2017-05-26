@@ -7,7 +7,7 @@ import VueLocalize from 'v-localize';
 import Localizations from './config/i18n.json';
 import Particles from './config/particles.json';
 
-// # plugins
+// # configure vuex
 const store = new Vuex.Store({
   state: {
     busy: false
@@ -19,11 +19,11 @@ const store = new Vuex.Store({
   }
 });
 
+// # install localization
 Vue.use(VueLocalize, {
   ang_default: 'en',
   localizations: Localizations
-});  // # install localization
-
+});
 
 import App from './App';
 import router from './routes';
