@@ -11,15 +11,19 @@
 
 <script>
   import Header from '@/components/Header';
-  // import Footer from '@/components/Footer';
-  // import Loading from '@/components/Loading';
-  // import Navbar from '@/components/Navbar';
-  // import Author from '@/components/Author';
+  import Footer from '@/components/Footer';
+  import Loading from '@/components/Loading';
+  import Navbar from '@/components/Navbar';
+  import Author from '@/components/Author';
 
   export default {
     name: 'app',
     components: {
-      Header
+      Header,
+      Footer,
+      Loading,
+      Navbar,
+      Author
     }
   };
 </script>
