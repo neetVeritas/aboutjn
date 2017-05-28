@@ -12,18 +12,16 @@
 <script>
   import Topbar from '@/components/Topbar';
   import Bottom from '@/components/Bottom';
-  import Loading from '@/components/Loading';
+  import Loader from '@/components/Loader';
   import Navbar from '@/components/Navbar';
-  import Author from '@/components/Author';
 
   export default {
     name: 'app',
     components: {
       Topbar,
       Bottom,
-      Loading,
-      Navbar,
-      Author
+      Loader,
+      Navbar
     }
   };
 </script>

@@ -10,7 +10,10 @@
 </template>
 
 <script>
+  import Author from '@/components/Author';
+
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: { Author }
   };
 </script>
