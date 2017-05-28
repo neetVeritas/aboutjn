@@ -1,29 +1,16 @@
 <template>
-  <app>
+  <div>
     <loader></loader>
-    <header></header>
+    <topbar></topbar>
     <section id="view">
       <router-view></router-view>
     </section>
-    <footer></footer>
-  </app>
+    <bottom></bottom>
+  </div>
 </template>
 
 <script>
-  import Header from '@/components/Header';
-  import Footer from '@/components/Footer';
-  import Loading from '@/components/Loading';
-  import Navbar from '@/components/Navbar';
-  import Author from '@/components/Author';
-
   export default {
-    name: 'app',
-    components: {
-      Header,
-      Footer,
-      Loading,
-      Navbar,
-      Author
-    }
+    name: 'app'
   };
 </script>

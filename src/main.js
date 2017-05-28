@@ -1,39 +1,25 @@
-// # libraries
 import Vue from 'vue';
-import Vuex from 'vuex';
-import VueLocalize from 'v-localize';
 
-// # configurations
-import Localizations from './config/i18n.json';
-import Particles from './config/particles.json';
+import App from '@/App';
+import Topbar from '@/components/Topbar';
+import Bottom from '@/components/Bottom';
+import Loading from '@/components/Loading';
+import Navbar from '@/components/Navbar';
+import Author from '@/components/Author';
 
-// # configure vuex
-const store = new Vuex.Store({
-  state: {
-    busy: false
-  },
-  mutations: {
-    status (state) {
-      state.busy = !state.busy;
-    }
-  }
-});
-
-// # install localization
-Vue.use(VueLocalize, {
-  ang_default: 'en',
-  localizations: Localizations
-});
-
-import App from './App';
-import router from './routes';
+import localize from '@/localization/localize'
+import store from '@/vuex/store'
+import routes from '@/router/routes';
 
 new Vue({
-  router,
+  routes,
   store,
-  render: h => h(App),
-  components: { App },
-  created: function() {
-    particlesJS.load('view', Particles);
-  }
+  components:{
+    App,
+    Topbar,
+    Bottom,
+    Loading,
+    Navbar,
+    Author
+  },
 }).$mount('app');

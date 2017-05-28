@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
+Vue.use(VueRouter);
+
 import Home from '@/components/routes/Home';
 import Blog from '@/components/routes/Blog';
 import About from '@/components/routes/About';
