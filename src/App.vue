@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <loader></loader>
     <topbar></topbar>
     <section id="view">
@@ -10,7 +10,20 @@
 </template>
 
 <script>
+  import Topbar from '@/components/Topbar';
+  import Bottom from '@/components/Bottom';
+  import Loading from '@/components/Loading';
+  import Navbar from '@/components/Navbar';
+  import Author from '@/components/Author';
+
   export default {
-    name: 'app'
+    name: 'app',
+    components: {
+      Topbar,
+      Bottom,
+      Loading,
+      Navbar,
+      Author
+    }
   };
 </script>
