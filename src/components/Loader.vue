@@ -4,7 +4,7 @@
     enter-active-class="animated zoomIn"
     leave-active-class="animated zoomOut"
   >
-    <div v-if="store.state.busy" class="loading loading-wrapper">
+    <div v-if="$store.state.busy" class="loading loading-wrapper">
       <div class="loading loading-container">
         <h3>
           <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>

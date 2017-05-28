@@ -7,8 +7,7 @@ import store from '@/vuex/store';
 import router from '@/router/routes';
 
 new Vue({
-  el: 'app',
   store,
   router,
   render: h => h(App)
-});
+}).$mount('app');
