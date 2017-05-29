@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Home from '@/components/routes/Home';
-import Blog from '@/components/routes/Blog';
-import About from '@/components/routes/About';
-import NotFound from '@/components/routes/notFound';
+import Home from '@/router/components/Home';
+import Blog from '@/router/components/Blog';
+import About from '@/router/components/About';
+import NotFound from '@/router/components/notFound';
 
 Vue.use(Router);
 

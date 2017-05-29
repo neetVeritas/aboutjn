@@ -2,9 +2,9 @@ import Vue from 'vue';
 
 import App from '@/App';
 
-import localize from '@/localization/localize';
-import store from '@/vuex/store';
-import router from '@/router/routes';
+import localize from '@/localize';
+import store from '@/vuex';
+import router from '@/router';
 
 new Vue({
   store,
