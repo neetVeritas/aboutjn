@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-wrapper">
-      <h4 v-localize="'header.notification'" class=""></h4>
+      <h4>{{ $t('header.notification') }}</h4>
     </div>
   </header>
 </template>

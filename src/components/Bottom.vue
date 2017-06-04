@@ -8,10 +8,10 @@
         <div class="four columns text-center">
           <ul>
             <li>
-              <h5 v-localize="'footer.created'"></h5>
+              <h5 v-html="$t('footer.created')"></h5>
             </li>
             <li>
-              <h6 v-localize="'footer.designed'"></h6>
+              <h6 v-html="$t('footer.designed')"></h6>
             </li>
           </ul>
         </div>

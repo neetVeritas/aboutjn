@@ -1,9 +1,13 @@
 import Vue from 'vue';
-import VueLocalize from 'v-localize';
+import VueI18n from 'vue-i18n';
 
-import localizations from './i18n.json';
+import messages from './i18n.json';
 
-Vue.use(VueLocalize, {
-  lang_default: 'en',
-  localizations: localizations
+Vue.use(VueI18n);
+
+var i18n = new VueI18n({
+  locale: 'en',
+  messages
 });
+
+export default i18n;
