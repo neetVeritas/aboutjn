@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
 import App from '@/App';
+import '@/assets/styles/main.scss';
 
 import localize from '@/localize';
 import store from '@/vuex';

@@ -16,7 +16,7 @@ module.exports = {
     filename: 'build.js'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.scss'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
@@ -44,15 +44,14 @@ module.exports = {
       },
       {
         test: /\.s[a|c]ss$/,
-        include: [resolve('src/styles')],
         loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader!sass-loader',
+          fallback: 'style-loader',
+          use: 'css-loader!sass-loader',
         })
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin(resolve('dist/styles.css')),
+    new ExtractTextPlugin('styles.css'),
   ]
 };
