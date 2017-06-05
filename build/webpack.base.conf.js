@@ -48,6 +48,14 @@ module.exports = {
           fallback: 'style-loader',
           use: 'css-loader!sass-loader',
         })
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: resolve('assets/imgages/[name].[hash:7].[ext]')
+        }
       }
     ]
   },
