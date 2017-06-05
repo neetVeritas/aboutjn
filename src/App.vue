@@ -15,6 +15,8 @@
   import Loader from '@/components/Loader';
   import Navbar from '@/components/Navbar';
 
+  import particles from '@/config/particles.json';
+
   export default {
     name: 'app',
     components: {
@@ -22,6 +24,14 @@
       Bottom,
       Loader,
       Navbar
+    },
+    created: () => {
+      let watcher = window.setInterval(function() {
+        if (document.querySelector('#view')) {
+          particlesJS('view', particles);
+          window.clearInterval(watcher);
+        }
+      }, 500);
     }
   };
 </script>
