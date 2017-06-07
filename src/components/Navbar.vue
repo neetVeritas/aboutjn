@@ -1,15 +1,15 @@
-<script type="text/x-template" id="navbar-template">
+<template>
   <nav>
     <div class="nav-left">
       <ul class="nav-menu">
         <li>
-          <router-link to="/home" v-localize="'header.nav.home'"></router-link>
+          <router-link to="/home" v-html="$t('header.nav.home')"></router-link>
         </li>
         <li>
-          <router-link to="/blog" v-localize="'header.nav.blog'"></router-link>
+          <router-link to="/blog" v-localize="$t('header.nav.blog')"></router-link>
         </li>
         <li>
-          <router-link to="/about" v-localize="'header.nav.about'"></router-link>
+          <router-link to="/about" v-localize="$t('header.nav.about')"></router-link>
         </li>
       </ul>
     </div>
@@ -28,14 +28,10 @@
       </ul>
     </div>
   </nav>
-</script>
+</template>
 
-<style>
-  
-</style>
-
-<script type="text/javascript">
-  Vue.component('app-navbar', {
-    template: '#navbar-template'
-  });
+<script>
+  export default {
+    name: 'navbar'
+  };
 </script>
