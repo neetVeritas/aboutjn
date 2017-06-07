@@ -8,7 +8,12 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'echo "hi"'
+        sh '''sudo bash
+cd $aboutjn_xyz
+git pull origin master
+npm install
+./node_modules/bin/webpack --config build/webpack.base.config.js
+'''
       }
     }
   }
