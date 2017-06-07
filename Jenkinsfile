@@ -9,6 +9,7 @@ pipeline {
     stage('error') {
       steps {
         sh '''sudo bash
+su root
 cd $aboutjn_xyz
 git pull origin master
 npm install
