@@ -1,7 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'web_general'
+    }
+    
+  }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo "hi"'
       }
