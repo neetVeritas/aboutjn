@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh '''sudo bash
-su root
+        sh '''cd ~
+sudo bash
 cd $aboutjn_xyz
 git pull origin master
 npm install
