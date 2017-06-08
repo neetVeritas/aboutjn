@@ -14,9 +14,8 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        sh '''docker stop $(docker ps -a -q)
-docker rm -f $(docker ps -a -q)'''
-        sh 'docker rmi -f $(docker images -q)'
+        sh 'docker rm -f portfolio'
+        sh 'docker rmi -f aboutjn'
         sh '''docker build . -t aboutjn
 docker run -d -p 3000:3000 --name portfolio aboutjn'''
       }
