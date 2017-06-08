@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
+        sh 'npm install'
         sh 'npm run build'
       }
     }
