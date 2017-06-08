@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'web_general'
+      label 'remote'
     }
     
   }
