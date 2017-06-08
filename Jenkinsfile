@@ -6,7 +6,7 @@ pipeline {
     
   }
   stages {
-    stage('error') {
+    stage('build') {
       steps {
         sh 'npm install'
         sh 'npm run build'
