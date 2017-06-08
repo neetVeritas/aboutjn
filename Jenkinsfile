@@ -12,5 +12,22 @@ pipeline {
         sh 'npm run build'
       }
     }
+    stage('deploy') {
+      steps {
+        parallel(
+          "deploy": {
+            sh '''docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)'''
+            sh 'docker rmi $(docker images -q)'
+            
+          },
+          "": {
+            sh '''docker build . -t aboutjn
+docker run -d -p 3000:3000 --name portfolio aboutjn'''
+            
+          }
+        )
+      }
+    }
   }
 }
