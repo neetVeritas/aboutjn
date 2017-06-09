@@ -14,7 +14,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        sh '''set +e
+        sh '''#!/bin/sh
 [ $(docker ps -f name=portfolio --format="{{.ID}}") ] && docker rm -f portfolio'''
         sh '''[ $( docker images -q aboutjn) ] && docker rmi -f aboutjn
 set -e'''
