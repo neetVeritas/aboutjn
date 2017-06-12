@@ -1,23 +1,49 @@
-# aboutjn / **Portfolio**
+# aboutjn - **Portfolio & Blog**
 
-This portfolio was developed using the amazing VueJS.
-This app is completely experimental, it would not be advised to follow this design pattern without a thorough analysis of it's drawbacks.
+This web application was developed using the amazing VueJS.
+Rather than using the `vue-cli`, this was built from "scratch" using the best design practices. It was originally developed using php5 and laravel, but it was later moved to nodejs using webpack for more flexibility.
 
 ### About
+This portfolio and blog have a relatively simple build process.
 
-This project was created on a very limited environment, without access to NPM or composer I tried a *different* approach to bundling my components, styles, and resources.
+### Setting Up
+To build this application the following requirements must be met,
+1. Node 6.x
+2. NPM >=3
+3. Docker (optional)
+
+You may then either run the application locally like so,
+```sh
+npm install # install dependencies
+npm run dev  # run application with hot module reload
+```
+or build a new docker image and run your application inside a container,
+```sh
+docker build . -t aboutjn  # build docker image, install app dependencies
+docker run -d -p 3000:3000 --name portfolio aboutjn  # run docker image bind app to port 3000 on host
+```
+optionally you may also build your application using
+```sh
+npm run build # build your application using webpack
+```
 
 ### Technologies
-
-* PHP 5
-* VueJS 2.3.2 (Vuex, Vue Resource, Vue Router)
-* jQuery 3.2.1
-* particles.js
-* SkeletonCSS >= 2.0.4
-* animate.css >= 3.5.2
-* fontawesome >= 4.7
+* Babel (ES6)
+* Vuejs 2
+ - vue-i18n
+ - vue-router
+ - vue-resource
+* SASS
+* Webpack
+ - vue-loader
+ - sass-loader
+ - url-loader
+ - file-loader
+ - babel-loadr
+* Firebase
+* SkeletonCSS
+* Fontawesome
 
 ---
 
 Copyright (c) 2017 John Nolette Licensed under the MIT license.
-
