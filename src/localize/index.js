@@ -5,10 +5,8 @@ Vue.use(Localize);
 
 import localizations from './i18n.json';
 
-let localize = Localize.config({
+export default Localize.config({
   default: 'en',
   available: ['en', 'sp', 'pr'],
   localizations
 });
-
-export default localize;
