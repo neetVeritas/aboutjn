@@ -23,8 +23,8 @@
     },
     created: () => {
       let watcher = window.setInterval(function() {
-        if (document.querySelector('#view')) {
-          particlesJS('view', particles);
+        if (document.querySelector('#app')) {
+          particlesJS('app', particles);
           window.clearInterval(watcher);
         }
       }, 500);

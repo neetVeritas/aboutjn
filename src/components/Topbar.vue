@@ -1,7 +1,34 @@
 <template>
   <header>
     <div class="header-wrapper">
-      <h4 v-localize="{item: 'header.notification'}"></h4>
+      <div class="row">
+        <div class="six columns">
+          <div class="menu-left">
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="menu-right">
+            <div class="locale-list">
+              <ul class="locale-menu">
+                <li>
+                  <img src="src/assets/images/flag-us.png">
+                  English
+                </li>
+                <li>
+                  <img src="src/assets/images/flag-portugal.png">
+                  Portuguese
+                </li>
+                <li>
+                  <img src="src/assets/images/flag-span.png">
+                  Spanish
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
