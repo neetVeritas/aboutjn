@@ -11,6 +11,9 @@
         <div class="six columns">
           <div class="menu-right">
             <div class="locale-list">
+              <a href="#" v-localize="{item: 'localize', attr='title'}">
+                <img class="locale-bubble" src=""></img>
+              </a>
               <ul class="locale-menu">
                 <li>
                   <img src="src/assets/images/flag-us.png">

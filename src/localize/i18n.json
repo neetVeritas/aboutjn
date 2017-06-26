@@ -1,40 +1,43 @@
 {
-  "en": {
+  "en-US": {
     "header": {
       "notification": "Welcome to my portfolio!",
       "nav": {
         "home": "Home",
         "blog": "Blog",
         "about": "About"
-      }
+      },
+      "localize": "Click to change language"
     },
     "footer": {
       "created": "Created using the incredible <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Designed with <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> using SkeletonCSS"
     }
   },
-  "sp": {
+  "es-SP": {
     "header": {
       "notification": "¡Bienvenidos a mi cartera!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
-      }
+      },
+      "localize": "Haga clic para cambiar el idioma"
     },
     "footer": {
       "created": "Creado con el increíble <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Diseñado con <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
     }
   },
-  "pr": {
+  "pr-BR": {
     "header": {
       "notification": "Bem-vindo ao meu portfólio!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
-      }
+      },
+      "localize": "Clique para alterar o idioma"
     },
     "footer": {
       "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
