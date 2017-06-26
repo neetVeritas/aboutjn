@@ -7,6 +7,9 @@ import localizations from './i18n.json';
 
 export default Localize.config({
   default: 'en',
-  available: ['en', 'sp', 'pr'],
+  available: ['en-US', 'sp-SP', 'pr-BR', {
+    locale: 'ar-ST',
+    orientation: 'rtl'
+  }],
   localizations
 });

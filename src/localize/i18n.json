@@ -1,5 +1,6 @@
 {
   "en-US": {
+    "loading": "Loading...",
     "header": {
       "notification": "Welcome to my portfolio!",
       "nav": {
@@ -15,6 +16,7 @@
     }
   },
   "es-SP": {
+    "loading": "Cargando...",
     "header": {
       "notification": "¡Bienvenidos a mi cartera!",
       "nav": {
@@ -30,6 +32,7 @@
     }
   },
   "pr-BR": {
+    "loading": "Carregando...",
     "header": {
       "notification": "Bem-vindo ao meu portfólio!",
       "nav": {
@@ -42,6 +45,22 @@
     "footer": {
       "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Projetado com <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
+    }
+  },
+  "ar-ST": {
+    "loading": "جار التحميل...",
+    "header": {
+      "notification": "مرحبا بكم في محفظتي!",
+      "nav": {
+        "home": "منزل",
+        "blog": "مدونة",
+        "about": "حول"
+      },
+      "localize": "انقر لتغيير اللغة"
+    },
+    "footer": {
+      "created": "تم إنشاؤها باستخدام فوجس لا يصدق",
+      "designed": "صمم مع الحب باستخدام سكيليتونس"
     }
   }
 }
