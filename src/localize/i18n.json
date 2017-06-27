@@ -8,14 +8,22 @@
         "blog": "Blog",
         "about": "About"
       },
-      "localize": "Click to change language"
+      "localize": {
+        "hover": "Click to change language",
+        "languages": {
+          "english": "Engish",
+          "spanish": "Spanish",
+          "portuguese": "Portuguese",
+          "arabic": "Arabic"
+        }
+      }
     },
     "footer": {
       "created": "Created using the incredible <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Designed with <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> using SkeletonCSS"
     }
   },
-  "es-SP": {
+  "sp-LA": {
     "loading": "Cargando...",
     "header": {
       "notification": "¡Bienvenidos a mi cartera!",
@@ -24,7 +32,15 @@
         "blog": "Blog",
         "about": "Sobre"
       },
-      "localize": "Haga clic para cambiar el idioma"
+      "localize": {
+        "hover": "Haga clic para cambiar el idioma",
+        "languages": {
+          "english": "Inglés",
+          "spanish": "Español",
+          "portuguese": "Portugués",
+          "arabic": "Arábica"
+        }
+      }
     },
     "footer": {
       "created": "Creado con el increíble <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
@@ -40,14 +56,22 @@
         "blog": "Blog",
         "about": "Sobre"
       },
-      "localize": "Clique para alterar o idioma"
+      "localize": {
+        "hover": "Clique para alterar o idioma",
+        "languages": {
+          "english": "Inglês",
+          "spanish": "Espanhol",
+          "portuguese": "Português",
+          "arabic": "árabe"
+        }
+      }
     },
     "footer": {
       "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Projetado com <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
     }
   },
-  "ar-ST": {
+  "ar-SA": {
     "loading": "جار التحميل...",
     "header": {
       "notification": "مرحبا بكم في محفظتي!",
@@ -56,7 +80,15 @@
         "blog": "مدونة",
         "about": "حول"
       },
-      "localize": "انقر لتغيير اللغة"
+      "localize": {
+        "hover": "انقر لتغيير اللغة",
+        "languages": {
+          "english": "الإنجليزية",
+          "spanish": "الأسبانية",
+          "portuguese": "البرتغالية",
+          "arabic": "عربى"
+        }
+      }
     },
     "footer": {
       "created": "تم إنشاؤها باستخدام فوجس لا يصدق",

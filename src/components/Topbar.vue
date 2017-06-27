@@ -10,25 +10,7 @@
         </div>
         <div class="six columns">
           <div class="menu-right">
-            <div class="locale-list">
-              <a href="#" v-localize="{item: 'localize', attr:'title'}">
-                <img class="locale-bubble" src=""></img>
-              </a>
-              <ul class="locale-menu">
-                <li>
-                  <img src="src/assets/images/flag-us.png">
-                  English
-                </li>
-                <li>
-                  <img src="src/assets/images/flag-portugal.png">
-                  Portuguese
-                </li>
-                <li>
-                  <img src="src/assets/images/flag-span.png">
-                  Spanish
-                </li>
-              </ul>
-            </div>
+            <locale-selector :locale="$root.$locale()"></locale-selector>
           </div>
         </div>
       </div>
@@ -37,8 +19,11 @@
 </template>
 
 <script>
+  import LocaleSelector from '@/components/partials/LocaleSelector';
+
   export default {
-    name: 'topbar'
+    name: 'topbar',
+    components: { LocaleSelector }
   };
 </script>
 
