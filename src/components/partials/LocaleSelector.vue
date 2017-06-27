@@ -45,14 +45,20 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '~styles/variables.scss';
+
   .locale-list {
     .locale-tab {
       display: inline-block;
+      background-color: $color-cinder;
       img {
         display: inline-block;
         border-radius: 100%;
         width: 3rem;
       }
+    }
+    .local-menu {
+      background-color: $color-cinder-dark;
     }
   }
 </style>
