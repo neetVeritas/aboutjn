@@ -26,6 +26,7 @@
   "homepage": "https://github.com/neetVeritas/aboutjn#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
+    "d3": "^4.9.1",
     "fontawesome": "^4.7.2",
     "jquery": "^3.2.1",
     "skeleton-css": "^2.0.4",
