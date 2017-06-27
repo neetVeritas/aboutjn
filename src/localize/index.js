@@ -10,7 +10,10 @@ export default Localize.config({
   default: 'en-US',
   available: ['en-US', 'sp-LA', 'pr-BR', {
     locale: 'ar-SA',
-    orientation: 'rtl'
+    orientation: 'rtl',
+    font: {
+      size: 'smaller'
+    }
   }],
   localizations
 });
