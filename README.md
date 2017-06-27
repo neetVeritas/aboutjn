@@ -3,10 +3,10 @@
 [![Build Status](https://ci.aboutjn.xyz/job/neetVeritas/job/aboutjn/job/master/badge/icon)](https://ci.aboutjn.xyz/job/neetVeritas/job/aboutjn/job/master/)
 
 This web application was developed using the amazing VueJS.
-Rather than using the `vue-cli`, this was built from "scratch" using the best design practices. It was originally developed using php5 and laravel, but it was later moved to nodejs using webpack for more flexibility.
+Rather than using the `vue-cli`, this was built from "scratch" using experimental design practices. It was originally developed using php5 and laravel, but it was later moved to nodejs using webpack for more flexibility.
 
 ### About
-This portfolio and blog have a relatively simple build process. Because this application does not expose an api, it is technically "server-less". The internal blog is operated using firebase, making it easily deployable and flexible.
+This portfolio has a relatively simple build process. Because this application does not expose an api, it is technically "server-less". The internal blog is operated using firebase, making it easily deployable and flexible.
 
 ### Setting Up
 To build this application the following requirements must be met,
@@ -32,16 +32,8 @@ npm run build # build your application using webpack
 ### Technologies
 * Babel (ES6)
 * Vuejs 2
- - vue-i18n
- - vue-router
- - vue-resource
 * SASS
 * Webpack
- - vue-loader
- - sass-loader
- - url-loader
- - file-loader
- - babel-loadr
 * Firebase
 * SkeletonCSS
 * Fontawesome

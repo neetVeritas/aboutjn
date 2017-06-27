@@ -1,21 +1,21 @@
 {
   "en-US": {
     "loading": "Loading...",
+    "localize": {
+      "hover": "Click to change language",
+      "languages": {
+        "english": "Engish",
+        "spanish": "Spanish",
+        "portuguese": "Portuguese",
+        "arabic": "Arabic"
+      }
+    },
     "header": {
       "notification": "Welcome to my portfolio!",
       "nav": {
         "home": "Home",
         "blog": "Blog",
         "about": "About"
-      },
-      "localize": {
-        "hover": "Click to change language",
-        "languages": {
-          "english": "Engish",
-          "spanish": "Spanish",
-          "portuguese": "Portuguese",
-          "arabic": "Arabic"
-        }
       }
     },
     "footer": {
@@ -25,21 +25,21 @@
   },
   "sp-LA": {
     "loading": "Cargando...",
+    "localize": {
+      "hover": "Haga clic para cambiar el idioma",
+      "languages": {
+        "english": "Inglés",
+        "spanish": "Español",
+        "portuguese": "Portugués",
+        "arabic": "Arábica"
+      }
+    },
     "header": {
       "notification": "¡Bienvenidos a mi cartera!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
-      },
-      "localize": {
-        "hover": "Haga clic para cambiar el idioma",
-        "languages": {
-          "english": "Inglés",
-          "spanish": "Español",
-          "portuguese": "Portugués",
-          "arabic": "Arábica"
-        }
       }
     },
     "footer": {
@@ -49,21 +49,21 @@
   },
   "pr-BR": {
     "loading": "Carregando...",
+    "localize": {
+      "hover": "Clique para alterar o idioma",
+      "languages": {
+        "english": "Inglês",
+        "spanish": "Espanhol",
+        "portuguese": "Português",
+        "arabic": "árabe"
+      }
+    },
     "header": {
       "notification": "Bem-vindo ao meu portfólio!",
       "nav": {
         "home": "Casa",
         "blog": "Blog",
         "about": "Sobre"
-      },
-      "localize": {
-        "hover": "Clique para alterar o idioma",
-        "languages": {
-          "english": "Inglês",
-          "spanish": "Espanhol",
-          "portuguese": "Português",
-          "arabic": "árabe"
-        }
       }
     },
     "footer": {
@@ -73,21 +73,21 @@
   },
   "ar-SA": {
     "loading": "جار التحميل...",
+    "localize": {
+      "hover": "انقر لتغيير اللغة",
+      "languages": {
+        "english": "الإنجليزية",
+        "spanish": "الأسبانية",
+        "portuguese": "البرتغالية",
+        "arabic": "عربى"
+      }
+    },
     "header": {
       "notification": "مرحبا بكم في محفظتي!",
       "nav": {
         "home": "منزل",
         "blog": "مدونة",
         "about": "حول"
-      },
-      "localize": {
-        "hover": "انقر لتغيير اللغة",
-        "languages": {
-          "english": "الإنجليزية",
-          "spanish": "الأسبانية",
-          "portuguese": "البرتغالية",
-          "arabic": "عربى"
-        }
       }
     },
     "footer": {

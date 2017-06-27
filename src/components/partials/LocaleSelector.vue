@@ -1,15 +1,17 @@
 <template>
   <div class="locale-list">
-    <a href="#" v-localize="{item: 'localize.hover', attr:'title'}">
-      <img class="locale-bubble" :src="'/src/assets/images/flags/' + locales[locale].flag"></img>
-      <span class="locale-label" v-localize="{ item: 'localize.languages.' + locales[locale].name }"></span>
+    <a class="locale-tab" href="#" v-localize="{item: 'localize.hover', attr:'title'}">
+      <img :src="'/src/assets/images/flags/' + locales[locale].flag"></img>
+      <span v-localize="{ item: 'localize.languages.' + locales[locale].name }"></span>
     </a>
-    <!--<ul class="locale-menu">
-      <li>
-        <img class="locale-bubble" :src="'/src/assets/images/flags' + locales[$locale()].flag"></img>
-        <span class="locale-label" v-localize="{item: locales[$locale()].name}"></span>
+    <ul class="locale-menu">
+      <li v-for="(dat, loc) in locales">
+        <a class="locale-tab" href="#" v-localize="{item: 'localize.hover', attr:'title'}">
+          <img :src="'/src/assets/images/flags/' + locales[loc].flag"></img>
+          <span v-localize="{ item: 'localize.languages.' + locales[loc].name }"></span>
+        </a>
       </li>
-    </ul>-->
+    </ul>
   </div>
 </template>
 
@@ -30,7 +32,7 @@
           },
           'pr-BR': {
             'name': 'portuguese',
-            'flag': 'flag-br.png'
+            'flag': 'flag-pr.png'
           },
           'ar-SA': {
             'name': 'arabic',
@@ -43,5 +45,14 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .locale-list {
+    .locale-tab {
+      display: inline-block;
+      img {
+        display: inline-block;
+        border-radius: 100%;
+        width: 3rem;
+      }
+    }
+  }
 </style>
