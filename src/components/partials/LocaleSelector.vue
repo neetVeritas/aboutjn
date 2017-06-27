@@ -6,7 +6,7 @@
     </a>
     <ul class="locale-menu">
       <li v-for="(dat, loc) in locales">
-        <a class="locale-tab" href="#" v-localize="{item: 'localize.hover', attr:'title'}">
+        <a @click="$locale(loc)" class="locale-tab" href="#" v-localize="{item: 'localize.hover', attr:'title'}">
           <img :src="'/src/assets/images/flags/' + locales[loc].flag"></img>
           <span v-localize="{ item: 'localize.languages.' + locales[loc].name }"></span>
         </a>
@@ -36,7 +36,7 @@
           },
           'ar-SA': {
             'name': 'arabic',
-            'flag': 'flag-ar-png'
+            'flag': 'flag-ar.png'
           }
         }
       }
@@ -59,6 +59,7 @@
     }
     .local-menu {
       background-color: $color-cinder-dark;
+      z-index: 100;
     }
   }
 </style>
