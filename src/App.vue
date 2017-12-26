@@ -10,25 +10,21 @@
 </template>
 
 <script>
+  import particles from '@/config/particles.json';
+
   import Topbar from '@/components/Topbar';
   import Bottom from '@/components/Bottom';
   import Loader from '@/components/Loader';
-  import Navbar from '@/components/Navbar';
-
-  import particles from '@/config/particles.json';
 
   export default {
     name: 'app',
     components: {
-      Topbar,
-      Bottom,
-      Loader,
-      Navbar
+      Topbar, Bottom, Loader
     },
     created: () => {
       let watcher = window.setInterval(function() {
-        if (document.querySelector('#view')) {
-          particlesJS('view', particles);
+        if (document.querySelector('#app')) {
+          particlesJS('app', particles);
           window.clearInterval(watcher);
         }
       }, 500);

@@ -1,14 +1,29 @@
 <template>
   <header>
     <div class="header-wrapper">
-      <h4>{{ $t('header.notification') }}</h4>
+      <div class="row">
+        <div class="six columns">
+          <div class="menu-left">
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="menu-right">
+            <locale-selector :locale="$root.$locale()"></locale-selector>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
 
 <script>
+  import LocaleSelector from '@/components/partials/LocaleSelector';
+
   export default {
-    name: 'topbar'
+    name: 'topbar',
+    components: { LocaleSelector }
   };
 </script>
 

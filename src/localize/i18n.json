@@ -1,5 +1,15 @@
 {
-  "en": {
+  "en-US": {
+    "loading": "Loading...",
+    "localize": {
+      "hover": "Click to change language",
+      "languages": {
+        "english": "English",
+        "spanish": "Spanish",
+        "portuguese": "Portuguese",
+        "arabic": "Arabic"
+      }
+    },
     "header": {
       "notification": "Welcome to my portfolio!",
       "nav": {
@@ -13,7 +23,17 @@
       "designed": "Designed with <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> using SkeletonCSS"
     }
   },
-  "sp": {
+  "sp-LA": {
+    "loading": "Cargando...",
+    "localize": {
+      "hover": "Haga clic para cambiar el idioma",
+      "languages": {
+        "english": "Inglés",
+        "spanish": "Español",
+        "portuguese": "Portugués",
+        "arabic": "Arábica"
+      }
+    },
     "header": {
       "notification": "¡Bienvenidos a mi cartera!",
       "nav": {
@@ -27,7 +47,17 @@
       "designed": "Diseñado con <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
     }
   },
-  "pr": {
+  "pr-BR": {
+    "loading": "Carregando...",
+    "localize": {
+      "hover": "Clique para alterar o idioma",
+      "languages": {
+        "english": "Inglês",
+        "spanish": "Espanhol",
+        "portuguese": "Português",
+        "arabic": "árabe"
+      }
+    },
     "header": {
       "notification": "Bem-vindo ao meu portfólio!",
       "nav": {
@@ -39,6 +69,30 @@
     "footer": {
       "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
       "designed": "Projetado com <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
+    }
+  },
+  "ar-SA": {
+    "loading": "جار التحميل...",
+    "localize": {
+      "hover": "انقر لتغيير اللغة",
+      "languages": {
+        "english": "الإنجليزية",
+        "spanish": "الأسبانية",
+        "portuguese": "البرتغالية",
+        "arabic": "عربى"
+      }
+    },
+    "header": {
+      "notification": "مرحبا بكم في محفظتي!",
+      "nav": {
+        "home": "منزل",
+        "blog": "مدونة",
+        "about": "حول"
+      }
+    },
+    "footer": {
+      "created": "تم إنشاؤها باستخدام فوجس لا يصدق",
+      "designed": "صمم مع الحب باستخدام سكيليتونس"
     }
   }
 }

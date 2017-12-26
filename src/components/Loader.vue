@@ -4,11 +4,11 @@
     enter-active-class="animated zoomIn"
     leave-active-class="animated zoomOut"
   >
-    <div v-if="$store.state.busy" class="loading loading-wrapper">
+    <div v-if="$store.state.busy" class="loading loading-wrapper" v-localize="{item: 'loading', attr: 'title'}">
       <div class="loading loading-container">
         <h3>
           <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-          <span class="sr-only">Loading...</span>
+          <span class="sr-only" v-localize="{item: 'loading'}"></span>
         </h3>
       </div>
     </div>

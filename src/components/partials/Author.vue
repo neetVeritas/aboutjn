@@ -1,7 +1,7 @@
 <template>
   <div class="author-wrapper">
     <div class="author-image">
-      <img :src="image" class="author-image-src" />
+      <img :src="image" class="author-image-src">
     </div>
     <h1>{{ fname || 'N/A' }}</h1>
     <h2></h2>
