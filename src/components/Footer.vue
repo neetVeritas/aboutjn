@@ -34,8 +34,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '~styles/variables.scss';
-
   footer {
     display: block;
     background-color: $color-cinder-dark;

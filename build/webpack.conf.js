@@ -29,19 +29,17 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          scss: [
-            'vue-style-loader',
-            'css-loader',
-            {
-              loader: 'sass-resources-loader',
-              options: {
-                resources: resolve('src/assets/styles/main.scss')
-              }
-            }
-          ],
           loaders: {
             js: 'babel-loader',
-            scss: 'vue-style-loader!css-loader!sass-loader'
+            scss: [
+              'vue-style-loader!css-loader!sass-loader',
+              {
+                loader: 'sass-resources-loader',
+                options: {
+                  resources: resolve('src/assets/styles/main.scss')
+                }
+              }
+            ]
           }
         }
       },
