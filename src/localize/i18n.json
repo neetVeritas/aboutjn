@@ -19,7 +19,7 @@
       }
     },
     "footer": {
-      "created": "Created using the incredible <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
+      "created": "Created using the incredible <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> Vue.js",
       "designed": "Designed with <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> using SkeletonCSS"
     }
   },
@@ -43,7 +43,7 @@
       }
     },
     "footer": {
-      "created": "Creado con el increíble <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
+      "created": "Creado con el increíble <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> Vue.js",
       "designed": "Diseñado con <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
     }
   },
@@ -67,7 +67,7 @@
       }
     },
     "footer": {
-      "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> VueJS",
+      "created": "Criado com o incrível <i class=\"fa fa-bolt ico ico-fixed\" style=\"color: orange;\"></i> Vue.js",
       "designed": "Projetado com <i class=\"fa fa-heart ico ico-fixed\" style=\"color: red;\"></i> usando SkeletonCSS"
     }
   },
