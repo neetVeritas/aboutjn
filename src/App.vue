@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <canvas class="particles-js-canvas-el" />
     <loader></loader>
     <topbar></topbar>
     <section id="view">
@@ -10,24 +11,28 @@
 </template>
 
 <script>
-  import particles from '@/config/particles.json';
+  import Particles from 'particlesjs/dist/particles'
+  import particles from '@/config/particles.json'
 
-  import Topbar from '@/components/Topbar';
-  import Bottom from '@/components/Bottom';
-  import Loader from '@/components/Loader';
+  import Topbar from '@/components/Topbar'
+  import Bottom from '@/components/Bottom'
+  import Loader from '@/components/Loader'
 
   export default {
     name: 'app',
     components: {
       Topbar, Bottom, Loader
     },
-    created: () => {
-      let watcher = window.setInterval(function() {
+    created() {
+      const watcher = window.setInterval(function() {
         if (document.querySelector('#app')) {
-          particlesJS('app', particles);
-          window.clearInterval(watcher);
+          Particles.init({
+            selector: '.particles-js-canvas-el',
+            color: '#ffffff'
+          })
+          window.clearInterval(watcher)
         }
-      }, 500);
+      }, 500)
     }
   };
 </script>
