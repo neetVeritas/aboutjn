@@ -37,3 +37,31 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '~styles/variables.scss';
+
+  div#app {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    display: block;
+  }
+
+  section#view {
+    margin: auto;
+    margin-top: $header-height;
+    width: 70%;
+    flex: 1;
+  }
+
+  .particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+</style>
