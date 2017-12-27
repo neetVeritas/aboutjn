@@ -1,14 +1,14 @@
-const path = require('path');
+const path = require('path')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
-};
+}
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
-      app: './src/main.js'
+    app: './src/main.js'
   },
   output: {
     path: resolve('./dist'),
@@ -29,6 +29,16 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
+          scss: [
+            'vue-style-loader',
+            'css-loader',
+            {
+              loader: 'sass-resources-loader',
+              options: {
+                resources: resolve('src/assets/styles/main.scss')
+              }
+            }
+          ],
           loaders: {
             js: 'babel-loader',
             scss: 'vue-style-loader!css-loader!sass-loader'
@@ -49,7 +59,7 @@ module.exports = {
         test: /\.s[a|c]ss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader!sass-loader',
+          use: 'css-loader!sass-loader'
         })
       },
       { test: /\.(png|jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'url-loader' },
@@ -57,6 +67,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin('styles.css')
   ]
-};
+}

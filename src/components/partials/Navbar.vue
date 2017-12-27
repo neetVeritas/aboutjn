@@ -40,7 +40,13 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '~styles/helpers/lists.scss';
+
   nav {
     padding: 1rem;
+    & .nav-menu {
+      @extend .unstyled;
+      @extend .inline;
+    }
   }
 </style>
