@@ -1,5 +1,6 @@
 <template>
   <header>
+    <navbar />
     <div class="header-wrapper">
       <div class="row">
         <div class="six columns">
@@ -19,11 +20,13 @@
 </template>
 
 <script>
+  import Navbar from '@/components/partials/Navbar'
   import LocaleSelector from '@/components/partials/LocaleSelector'
 
   export default {
-    name: 'topbar',
+    name: 'app-header',
     components: {
+      Navbar,
       LocaleSelector
     }
   }

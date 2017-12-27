@@ -14,14 +14,13 @@
   import Particles from 'particlesjs/dist/particles'
 
   import AppHeader from '@/components/Header'
-  import Navbar from '@/components/Navbar'
   import AppFooter from '@/components/Footer'
   import Loader from '@/components/Loader'
 
   export default {
     name: 'app',
     components: {
-      AppHeader, Navbar, AppFooter, Loader
+      AppHeader, AppFooter, Loader
     },
     created() {
       const watcher = window.setInterval(function() {
@@ -34,5 +33,5 @@
         }
       }, 500)
     }
-  };
+  }
 </script>
