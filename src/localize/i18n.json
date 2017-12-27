@@ -15,7 +15,8 @@
       "nav": {
         "home": "Home",
         "blog": "Blog",
-        "about": "About"
+        "about": "About",
+        "resume": "Resume"
       }
     },
     "footer": {
@@ -39,7 +40,8 @@
       "nav": {
         "home": "Casa",
         "blog": "Blog",
-        "about": "Sobre"
+        "about": "Sobre",
+        "resume": "Curriculum Vitae"
       }
     },
     "footer": {
@@ -63,7 +65,8 @@
       "nav": {
         "home": "Casa",
         "blog": "Blog",
-        "about": "Sobre"
+        "about": "Sobre",
+        "resume": "Surrículo"
       }
     },
     "footer": {

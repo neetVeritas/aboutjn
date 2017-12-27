@@ -11,6 +11,9 @@
         <li>
           <router-link to="/about" v-localize="{item: 'header.nav.about'}"></router-link>
         </li>
+        <li>
+          <router-link to="/resume" v-localize="{item: 'header.nav.resume'}"></router-link>
+        </li>
       </ul>
     </div>
     <div class="nav-right">
@@ -35,3 +38,9 @@
     name: 'navbar'
   }
 </script>
+
+<style lang="scss" scoped>
+  nav {
+    padding: 1rem;
+  }
+</style>

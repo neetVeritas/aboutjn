@@ -27,7 +27,9 @@
         if (document.querySelector('#app')) {
           Particles.init({
             selector: '.particles-js-canvas-el',
-            color: '#ffffff'
+            color: '#aaaaaa',
+            maxParticles: 150,
+            connectParticles: false
           })
           window.clearInterval(watcher)
         }

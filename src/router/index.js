@@ -1,19 +1,15 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from 'vue'
+import Router from 'vue-router'
 
-import Home from './views/Home';
-import Blog from './views//Blog';
-import About from './views//About';
-import NotFound from './views//notFound';
-
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
-    { path: '/', component: Home },
-    { path: '/home', component: Home },
-    { path: '/blog', component: Blog },
-    { path: '/about', component: About },
-    { path: '*', component: NotFound }
+    { path: '/', component: require('@/router/views/Home') },
+    { path: '/home', component: require('@/router/views/Home') },
+    { path: '/blog', component: require('@/router//views/Blog') },
+    { path: '/about', component: require('@/router/views/About') },
+    { path: '/resume', component: require('@/router/views/Resume') },
+    { path: '*', component: require('@/router/views/NotFound') }
   ]
 });

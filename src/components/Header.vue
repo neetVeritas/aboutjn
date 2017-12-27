@@ -11,7 +11,7 @@
         </div>
         <div class="six columns">
           <div class="menu-right">
-            <locale-selector :locale="$root.$locale()"></locale-selector>
+            <locale-selector :locale="$root.$locale()" />
           </div>
         </div>
       </div>
