@@ -45,6 +45,10 @@
     & .nav-menu {
       @extend .unstyled;
       @extend .inline;
+      & a {
+        text-decoration: none;
+        color: $color-ghost-white;
+      }
     }
   }
 </style>

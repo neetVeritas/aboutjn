@@ -45,8 +45,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '~styles/variables.scss';
-
   .locale-list {
     .locale-tab {
       display: inline-block;
@@ -59,7 +57,7 @@
     }
     .local-menu {
       background-color: $color-cinder-dark;
-      z-index: 100;
+      z-index: 9999;
     }
   }
 </style>
