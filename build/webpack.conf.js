@@ -21,7 +21,6 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'styles': resolve('src/assets/styles'),
-      'scss-loader': 'sass-loader'
     }
   },
   module: {
@@ -32,15 +31,19 @@ module.exports = {
         options: {
           loaders: {
             js: 'babel-loader',
-            scss: 'vue-style-loader!css-loader!sass-loader',
-            // sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+            scss: 'vue-style-loader!css-loader!sass-loader'
           }
         }
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        include: [resolve('src')]
+        exclude: /(node_modules)/,
+        use: {
+          'loader': 'babel-loader',
+          'options': {
+            'presets': ['env']
+          }
+        }
       },
       {
         test: /\.s[a|c]ss$/,
