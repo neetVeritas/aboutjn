@@ -3,18 +3,7 @@
 @import '~skeleton-css/css/skeleton.css';
 @import '~animate.css/animate.min.css';
 
-@import 'variables';
-
-@import 'mixins/shadow';
-@import 'mixins/animations';
-@import 'mixins/transition';
-@import 'mixins/centered';
-@import 'mixins/card';
-
-@import 'helpers/lists';
-@import 'helpers/fonts';
-@import 'helpers/icons';
-@import 'helpers/text';
+@import 'resources';
 
 * {
   font-family: $font-general;
