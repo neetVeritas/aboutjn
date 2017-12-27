@@ -19,12 +19,14 @@
 </template>
 
 <script>
-  import LocaleSelector from '@/components/partials/LocaleSelector';
+  import LocaleSelector from '@/components/partials/LocaleSelector'
 
   export default {
     name: 'topbar',
-    components: { LocaleSelector }
-  };
+    components: {
+      LocaleSelector
+    }
+  }
 </script>
 
 <style lang="scss" scoped>

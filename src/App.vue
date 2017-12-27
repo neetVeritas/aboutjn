@@ -1,27 +1,27 @@
 <template>
   <div id="app">
     <canvas class="particles-js-canvas-el" />
-    <loader></loader>
-    <topbar></topbar>
+    <loader />
+    <app-header />
     <section id="view">
-      <router-view></router-view>
+      <router-view />
     </section>
-    <bottom></bottom>
+    <app-footer />
   </div>
 </template>
 
 <script>
   import Particles from 'particlesjs/dist/particles'
-  import particles from '@/config/particles.json'
 
-  import Topbar from '@/components/Topbar'
-  import Bottom from '@/components/Bottom'
+  import AppHeader from '@/components/Header'
+  import Navbar from '@/components/Navbar'
+  import AppFooter from '@/components/Footer'
   import Loader from '@/components/Loader'
 
   export default {
     name: 'app',
     components: {
-      Topbar, Bottom, Loader
+      AppHeader, Navbar, AppFooter, Loader
     },
     created() {
       const watcher = window.setInterval(function() {

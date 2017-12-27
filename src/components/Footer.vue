@@ -29,7 +29,7 @@
 
 <script>
   export default {
-    name: 'bottom'
+    name: 'app-footer'
   };
 </script>
 
