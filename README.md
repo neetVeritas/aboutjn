@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/neetjn/aboutjn.svg?branch=master)](https://travis-ci.org/neetjn/aboutjn)
 
-This web application was developed using the amazing Vue.js.
-Rather than using the `vue-cli`, this was built from scratch using experimental design practices. It was originally developed using php5 and laravel, but it was later moved to node.js using webpack for more flexibility and better dependency management.
+This web application was developed using Ember.js.
 
 ### Blog
 
@@ -16,14 +15,13 @@ build . -t aboutjn:0.0.1
 docker run aboutjn -e BLOG_APIROOT_HREF=http://blog.aboutjn.xyz/v1/
 ```
 
-### Technologies
-* Vue.js 2
+### Stack
+* Ember.js
 * Sass
-* SkeletonCSS
+* Spectre.css
+* anime.js
 * animate.css
-* Fontawesome
-* Firebase
 
 ---
 
-Copyright (c) 2017 John Nolette Licensed under the MIT license.
+Copyright (c) 2018 John Nolette Licensed under the MIT license.
