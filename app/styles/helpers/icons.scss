@@ -1,0 +1,12 @@
+.ico {
+  display: inline-block;
+  &.ico-left {
+    padding-right: $ico-dist;
+  }
+  &.ico-right {
+    padding-left: $ico-dist;
+  }
+  &.ico-fixed {
+    padding: 0 $ico-dist 0 $ico-dist;
+  }
+}

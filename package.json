@@ -48,6 +48,7 @@
   "dependencies": {
     "ember-cli-google-fonts": "^2.16.2",
     "ember-cli-sass": "^7.1.7",
+    "foundation-icons": "^1.0.1",
     "spectre.css": "^0.5.1"
   }
 }

@@ -1,7 +1,16 @@
+@import './variables.scss';
+@import './helpers/_all.scss';
+@import './mixins/_all.scss';
+@import './components/_all.scss';
+
+* {
+  font: $font-general;
+}
+
 h1, h2, h3, h4, h5, title {
-  font-family: 'Lobster', cursive;
+  font: $font-title;
 }
 
 .news-title {
-  font-family: 'UnifrakturCook', cursive;
+  font: $font-logo;
 }

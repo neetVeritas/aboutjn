@@ -15,6 +15,12 @@ module.exports = {
     browser: true
   },
   rules: {
+    'object-curly-spacing': ['error', 'always'],
+    'no-multiple-empty-lines': ['error', { 'max': 2, 'maxBOF': 1 }],
+    'semi': ['error', 'never'],
+    'no-unused-vars': ['error'],
+    'space-before-blocks': ['error', 'always'],
+    'quotes': ['error', 'single']
   },
   overrides: [
     // node files

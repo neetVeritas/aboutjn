@@ -21,7 +21,8 @@ module.exports = function(environment) {
     },
     googleFonts: [
       'UnifrakturCook:300,400,700',
-      'Lobster:300'
+      'Lobster:300',
+      'Oswald:300'
     ]
   };
 
