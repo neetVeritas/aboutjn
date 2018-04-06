@@ -6,7 +6,10 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     nodeModulesToVendor: [
       'node_modules/spectre.css/dist'
-    ]
+    ],
+    sassOptions: {
+      extension: 'scss'
+    }
   });
 
   app.import('vendor/spectre.css');

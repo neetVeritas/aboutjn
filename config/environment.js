@@ -16,10 +16,13 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
     APP: {
       BLOG_ROOT_HREF: 'http://localhost:8000/'
-    }
+    },
+    googleFonts: [
+      'UnifrakturCook:300,400,700',
+      'Lobster:300'
+    ]
   };
 
   if (environment === 'development') {
