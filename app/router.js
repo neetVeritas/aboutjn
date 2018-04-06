@@ -1,16 +1,16 @@
-import EmberRouter from '@ember/routing/router';
-import config from './config/environment';
+import EmberRouter from '@ember/routing/router'
+import config from './config/environment'
 
 const Router = EmberRouter.extend({
   location: config.locationType,
   rootURL: config.rootURL
-});
+})
 
 Router.map(function() {
-  this.route('about');
-  this.route('cv');
-  this.route('projects');
-  this.route('employ');
-});
+  this.route('about')
+  this.route('cv')
+  this.route('projects')
+  this.route('employ')
+})
 
-export default Router;
+export default Router
