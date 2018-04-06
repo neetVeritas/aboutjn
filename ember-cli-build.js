@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const EmberApp = require('ember-cli/lib/broccoli/ember-app')
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
@@ -11,10 +11,10 @@ module.exports = function(defaults) {
     sassOptions: {
       extension: 'scss'
     }
-  });
+  })
 
-  app.import('vendor/spectre.css');
+  app.import('vendor/spectre.css')
   app.import('vendor/foundation-icons.css')
 
-  return app.toTree();
-};
+  return app.toTree()
+}
