@@ -2,9 +2,9 @@
   "name": "aboutjn",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for aboutjn goes here",
+  "description": "Personal blog and portfolio built with Ember.js, running on top of py-blog.",
   "license": "MIT",
-  "author": "",
+  "author": "John Nolette <john@neetgroup.net>",
   "directories": {
     "doc": "doc",
     "test": "tests"
