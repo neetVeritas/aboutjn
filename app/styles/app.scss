@@ -4,13 +4,13 @@
 @import './components/_all.scss';
 
 * {
-  font: $font-general;
+  font-family: $font-general;
 }
 
 h1, h2, h3, h4, h5, title {
-  font: $font-title;
+  font-family: $font-title;
 }
 
 .news-title {
-  font: $font-logo;
+  font-family: $font-logo;
 }

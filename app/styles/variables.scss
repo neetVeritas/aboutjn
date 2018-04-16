@@ -1,5 +1,18 @@
+$screen-desktop: 1280px;
+$screen-tablet: 960px;
+$screen-phablet: 840px;
+$screen-phone: 600px;
+$screen-mobile: 480px;
+
 $font-logo: 'UnifrakturCook', cursive;
 $font-title: 'Lobster', cursive;
 $font-general: 'Oswald', sans-serif;
 
 $ico-dist: 0.5rem;
+
+$color-shade-gray: #e5e5e5;
+$color-coal-gray: #131313;
+$color-tint-gray: #191919;
+$color-dirty-gray: #434343;
+$color-ghost-white: #f8f8ff;
+$color-medium-citrus: #fe5522;

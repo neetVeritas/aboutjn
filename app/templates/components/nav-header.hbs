@@ -1,14 +1,47 @@
-<header class="navbar">
+<header class="navbar-desktop hide-md animated slideInDown">
   <section class="navbar-section">
-    <a href="#" class="btn btn-link">Docs</a>
-    <a href="#" class="btn btn-link">Examples</a>
-  </section>
-  <section class="navbar-center">
-    <!-- centered logo or brand -->
-  </section>
-  <section class="navbar-section">
-    <a href="#" class="btn btn-link">Twitter</a>
-    <a href="#" class="btn btn-link">GitHub</a>
+    {{#link-to "home" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "home" class="ico md-16"}}
+    {{/link-to}}
+    {{#link-to "blog" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "question_answer" class="ico md-16"}} Blog
+    {{/link-to}}
+    {{#link-to "projects" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "code" class="ico md-16"}} Projects
+    {{/link-to}}
+    {{#link-to "cv" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "subject" class="ico md-16"}} CV
+    {{/link-to}}
   </section>
 </header>
-<h1 class="news-title">John Nolette</h1>
+
+<header class="navbar-mobile show-md animated slideInDown">
+  <section class="navbar-section">
+    {{#link-to "home" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "home" class="ico md-16"}}
+    {{/link-to}}
+    {{#link-to "blog" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "question_answer" class="ico md-16"}} Blog
+    {{/link-to}}
+    {{#link-to "projects" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "code" class="ico md-16"}} Projects
+    {{/link-to}}
+    {{#link-to "cv" href="{{view.href}}" class="btn btn-link"}}
+      {{material-icon "subject" class="ico md-16"}} CV
+    {{/link-to}}
+  </section>
+  <section class="navbar-section">
+    <a href="https:/github.com/neetjn" class="btn btn-link">
+      {{material-icon "link" class="ico md-16"}} Github
+    </a>
+    <a href="https://www.linkedin.com/in/john-nolette-69ba72132/" class="btn btn-link">
+      {{material-icon "link" class="ico md-16"}} Linkedin
+    </a>
+  </section>
+</header>
+
+<div class="news-banner animated jackInTheBox">
+  <div class="container">
+    <h1 class="news-title animated zoomIn text-center">John Nolette</h1>
+  </div>
+</div>

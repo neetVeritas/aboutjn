@@ -1,0 +1,39 @@
+header.navbar-desktop {
+  @include shadow(1);
+  background-color: $color-shade-gray;
+  font-weight: bold;
+  padding: 0;
+  & a.btn {
+    height: inherit;
+    border-radius: 0;
+  }
+  & a.btn-link {
+    color: $color-coal-gray;
+    border-bottom: 2px solid $color-shade-gray;
+    padding: 1rem;
+    transition-timing-function: linear;
+    &:hover, &:active, &.active {
+      color: $color-ghost-white;
+      background-color: $color-dirty-gray;
+      transition: 0.5s;
+    }
+    &.active {
+      border-bottom: 2px solid $color-dirty-gray;
+    }
+  }
+}
+
+div.news-banner {
+  @include shadow(3);
+  margin: 1rem auto 1rem auto;
+  @media screen and (max-width: $screen-desktop) {
+    width: 80%;
+  }
+  @media screen and (min-width: $screen-phablet) {
+    width: 40%;
+  }
+  padding-top: 0.5rem;
+  clip-path:polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+  background-color: $color-dirty-gray;
+  color: $color-ghost-white;
+}

@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('cv')
   this.route('projects')
   this.route('employ')
+  this.route('home')
+  this.route('blog')
 })
 
 export default Router

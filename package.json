@@ -27,16 +27,18 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-moment-shim": "^3.6.0",
     "ember-cli-node-modules-to-vendor": "^0.3.0",
     "ember-cli-qunit": "^4.1.1",
-    "ember-cli-rename": "0.0.4",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~3.0.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
+    "ember-material-icons": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-moment": "^7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~3.0.0",
     "ember-welcome-page": "^3.0.0",
@@ -47,9 +49,9 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
     "ember-cli-google-fonts": "^2.16.2",
     "ember-cli-sass": "^7.1.7",
-    "foundation-icons": "^1.0.1",
     "spectre.css": "^0.5.1"
   }
 }
