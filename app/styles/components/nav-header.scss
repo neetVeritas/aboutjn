@@ -12,6 +12,10 @@ header.navbar-desktop {
     border-bottom: 2px solid $color-shade-gray;
     padding: 1rem;
     transition-timing-function: linear;
+    & i.ico {
+      position: relative;
+      top: 3px;
+    }
     &:hover, &:active, &.active {
       color: $color-ghost-white;
       background-color: $color-dirty-gray;

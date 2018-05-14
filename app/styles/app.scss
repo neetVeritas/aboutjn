@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './helpers/_all.scss';
+@import './utilities/_all.scss';
 @import './mixins/_all.scss';
 @import './components/_all.scss';
 
@@ -13,4 +14,13 @@ h1, h2, h3, h4, h5, title {
 
 .news-title {
   font-family: $font-logo;
+}
+
+app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  & .ember-view:first-child {
+    flex: 1;
+  }
 }

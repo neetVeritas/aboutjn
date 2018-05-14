@@ -1,0 +1,15 @@
+footer {
+  display: block;
+  background-color: $color-coal-gray;
+  padding: 2rem;
+  & ul {
+    & li {
+      & a {
+        color: $color-medium-citrus;
+      }
+    }
+  }
+  & * {
+    color: $color-ghost-white;
+  }
+}
