@@ -3,6 +3,7 @@
 @import './utilities/_all.scss';
 @import './mixins/_all.scss';
 @import './components/_all.scss';
+@import './views/_all.scss';
 
 * {
   font-family: $font-general;
@@ -22,5 +23,8 @@ app {
   min-height: 100vh;
   & .view {
     flex: 1;
+    & .view-wrapper {
+      padding: 2rem;
+    }
   }
 }
