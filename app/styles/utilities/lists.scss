@@ -3,8 +3,14 @@ ol, ul {
     list-style: none;
   }
   &.list-inline {
-    & il {
+    display: inline;
+    & li {
       display: inline-block;
+    }
+    &.list-spaced {
+      & li {
+        padding-right: 0.5rem;
+      }
     }
   }
 }

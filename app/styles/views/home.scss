@@ -5,13 +5,19 @@ div.view > #home {
     padding: 1rem;
     margin: 0 auto;
     max-width: 250px;
+    & dl {
+      & dd {
+        margin-left: 0.5rem;
+      }
+    }
     & .profile-image {
      & img {
-       display: block;
-       margin: 0 auto;
-       height: 125px;
-       width: 125px;
-       border-radius: 250px;
+      @include shadow(2);
+      display: block;
+      margin: 0 auto;
+      height: 125px;
+      width: 125px;
+      border-radius: 250px;
      }
     }
   }
