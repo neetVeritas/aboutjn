@@ -1,5 +1,6 @@
-# aboutjn - **Portfolio & Blog**
+# (Deprecated) aboutjn - **Portfolio & Blog**
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![Build Status](https://travis-ci.org/neetjn/aboutjn.svg?branch=master)](https://travis-ci.org/neetjn/aboutjn)
 
 This web application was developed using Ember.js.
